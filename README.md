@@ -1,6 +1,6 @@
 # Rust Learnings
 ### Goals
-Replecate my C++ Person class, which used a Vector to store the instances, then interate through to output to console.
+Replicate my C++ Person class, which used a Vector to store class instances, then interate through them, outputing them to the console.
 
 ### Stages
 - [x]  Create an User enumn (Class).
