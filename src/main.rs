@@ -5,18 +5,18 @@ struct User {
 
 impl User {
     // TODO: Add a print User method
+    fn print_user(&self) {
+        println!("-------------------");
+        println!("Name: {}", self.username);
+        println!("Age: {}", self.age);
+    }
 }
 
 fn main() {
-    println!("Hello, world!");
     let my_user = User {
         username: String::from("Mark Crouch"),
         age: 57,
     };
-    // println!("My user's name is: {}",
-    //     my_user.username);
-    // println!("My user's age is: {}",
-    //     my_user.age);
     
     // Vector
     let mut users: Vec<User> = Vec::new();
@@ -37,8 +37,6 @@ fn main() {
     // }
 
     for user in users {
-        println!("-------------------");
-        println!("Name: {}", user.username);
-        println!("Age: {}", user.age);
+        User::print_user(&user);
     }
 }
