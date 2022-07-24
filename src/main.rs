@@ -4,7 +4,6 @@ struct User {
 }
 
 impl User {
-    // TODO: Add a print User method
     fn print_user(&self) {
         println!("-------------------");
         println!("Name: {}", self.username);
